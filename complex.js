@@ -1,4 +1,3 @@
-"use strict";
 var Complex = /** @class */ (function () {
     function Complex(re, im) {
         this.re = re;
@@ -21,4 +20,5 @@ var a = new Complex(re, 3, im, 4);
 var b = new Complex(re, 7, im, 4);
 var c = a.add(b);
 var d = new Complex(re, 3, im, -2);
-var e = ;
+var e = c.subtract(d);
+e.toString();
