@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { DataService } from 'D:/Studia/III_semestr/informatyka_aplikacji_internetu_Piwko/IAI_Lab9/app/blog/src/app/services/data.service';
 
 @Component({
   selector: 'blog',
@@ -12,7 +12,6 @@ export class BlogComponent implements OnInit {
 
   constructor(private service: DataService) {
   }
-
 
   ngOnInit(): void {
     this.getAll();

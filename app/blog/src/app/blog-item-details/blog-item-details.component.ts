@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { DataService } from 'D:/Studia/III_semestr/informatyka_aplikacji_internetu_Piwko/IAI_Lab9/app/blog/src/app/services/data.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -16,17 +16,7 @@ export class BlogItemDetailsComponent implements OnInit {
   constructor(private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    let id!: string;
-    this.route.paramMap.subscribe(params => {
-           id = params.get['id'];
-      });
-    if (id) {
-         this.dataService.getById(id).subscribe(res => {
-           this.image = res['image'];
-           this.text = res['text'];
-      });
-    } else {
-         this.id = 1;
-    }
+
   }
 }
+
